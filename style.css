@@ -59,6 +59,7 @@ h2 {
 	color: #b91c1c;
 	padding: 10px 12px;
 	border-radius: 8px;
+	z-index: 10;
 }
 
 .btn-close {
@@ -71,6 +72,7 @@ h2 {
 	border-radius: 50%;
 	display: flex;
 	cursor: pointer;
+	z-index: -1;
 }
 
 input {
