@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	color: #1f2937;
+}
+
+section {
+	max-width: 40rem;
+	margin: 80px auto;
+}
+
+.wrapper {
+	border: 1px solid #d1d5db;
+	border-radius: 15px;
+	position: relative;
+	padding: 40px 20px;
+	background-color: #fff;
+}
+
+h2 {
+	position: absolute;
+	top: -38px;
+	background-color: #fff;
+	padding: 0 10px;
+}
+
+.box-content {
+	margin-top: 1.5rem;
+}
+
+.box-content h4 {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	letter-spacing: 0.5px;
+	font-weight: 600;
+	text-transform: capitalize;
+	font-size: 14px;
+}
+
+.box-content h4::after {
+	content: '*';
+	margin-left: 2px;
+	color: #ef4444;
+}
+
+.alert {
+	display: block;
+	position: relative;
+	background-color: #fecaca;
+	color: #b91c1c;
+	padding: 10px 12px;
+	border-radius: 8px;
+}
+
+.btn-close {
+	background-color: inherit;
+	border: 0;
+	position: absolute;
+	right: -7px;
+	top: -7px;
+	padding: 5px;
+	border-radius: 50%;
+	display: flex;
+	cursor: pointer;
+}
+
+input {
+	margin: 0;
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: inherit;
+	color: inherit;
+}
+
+.form-input {
+	display: block;
+	width: 100%;
+	border: 0;
+	border: 1px solid #d1d5db;
+	padding: .75rem .75rem;
+	border-radius: 5px;
+}
+
+.form-input:focus {
+	outline-offset: 2px;
+	outline: 2px solid #0ea5e9;
+	border-color: #0ea5e9;
+}
+
+.form-grid input:last-child {
+	margin-top: 1rem;
+}
+
+.box-content span {
+	font-size: 10px;
+	font-weight: 400;
+	color: #9ca3af;
+	vertical-align: middle;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.gender div:first-of-type {
+	margin-right: 20px;
+}
+
+.gender label {
+	padding-left: 2px;
+	font-size: 14px;
+}
+
+textarea {
+	resize: vertical;
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: inherit;
+	color: inherit;
+}
+
+select {
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: inherit;
+	color: inherit;
+}
+
+.btn {
+	background-color: inherit;
+	border: 0;
+	padding: 10px 30px;
+	border-radius: 5px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.btn-reset {
+	background-color: #ef4444;
+	color: #fff;
+	margin-right: 0.5rem;
+}
+
+.btn-kirim {
+	background-color: #2563eb;
+	color: #fff;
+}
+
+.justify-end {
+	justify-content: end;
+}
+
+.thanks .wrapper {
+	max-width: 30rem;
+	margin: 80px auto;
+	text-align: center;
+}
+
+.thanks h1 {
+	font-weight: 700;
+}
+
+h1 span {
+	color: green;
+	margin-top: 40px;
+}
+
+.back-btn {
+	display: inline-block;	
+	text-align: center;
+	text-decoration: none;
+	background-color: #ef4444;
+	color: #fff;
+}
+
+@media (min-width: 768px) {
+
+	.wrapper {
+		padding: 40px;
+	}
+
+	.form-grid {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 1rem;
+	}
+
+	.form-grid input:last-child {
+		margin-top: 0;
+	}
+
+}
